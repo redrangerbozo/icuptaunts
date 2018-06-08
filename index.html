@@ -59,6 +59,33 @@ function playSound (tauntID) {
     document.getElementById(tauntID).load();
     document.getElementById(tauntID).play();
 }
+
+function playEasterEgg() {    
+    var r = Math.floor(Math.random() * 4);
+
+    switch(r) {
+        case 0:
+            document.getElementById('arneson').load();
+            document.getElementById('arneson').play();
+            break;
+
+        case 1:
+            document.getElementById('danny').load();
+            document.getElementById('danny').play();
+            break;
+
+        case 2:
+            document.getElementById('eyeball').load();
+            document.getElementById('eyeball').play();
+            break;
+
+        case 3:
+            document.getElementById('adam').load();
+            document.getElementById('adam').play();
+            break;
+
+    }
+}
 </script>
 </head>
 <body>
@@ -202,6 +229,9 @@ function playSound (tauntID) {
 <audio id="r21" src="sounds/r21.mp3" autostart="false" ></audio>
 
 <audio id="narneson" src="sounds/narneson.mp3" autostart="false" ></audio>
+<audio id="danny" src="sounds/danny.mp3" autostart="false" ></audio>
+<audio id="eyeball" src="sounds/eyeball.mp3" autostart="false" ></audio>
+<audio id="adam" src="sounds/adam.mp3" autostart="false" ></audio>
 
 
 
@@ -488,7 +518,7 @@ function playSound (tauntID) {
   <img class="btn" src="btn/r20.png" onclick="playSound('r20')" />
 </div>
 
-<div class="row" style="padding-top:30px;"><img id="hub" src="hub.png" onclick="playSound('narneson');" /></div>
+<div class="row" style="padding-top:30px;"><img id="hub" src="hub.png" onclick="playEasterEgg();" /></div>
 
 </body>
 </html>
