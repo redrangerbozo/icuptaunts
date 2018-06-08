@@ -1,0 +1,494 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<title>The Official ICUP MOHAA Custom Taunt Repository</title>
+<style>
+
+body {
+    background-image: url("bg.png");
+    background-repeat: repeat;
+}
+
+.btn {
+    margin: 10px;
+    width:400px;
+    cursor: pointer;
+}
+
+.row {
+    text-align:center;
+}
+
+.category {
+    font-family:Serif;
+    color:white;
+    text-align:center;
+    font-weight:bold;
+    font-size:40px;
+    padding-top:50px;
+}
+
+@media screen and (max-width: 600px) {
+    .btn, #title {
+        width: calc(100% - 20px);
+        height: auto;
+    }
+    
+    #hub {
+        width: 75%;
+        height: auto;
+    }
+    
+}
+
+img {
+  -moz-user-select: none;
+  -webkit-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  -webkit-user-drag: none;
+  user-drag: none;
+  -webkit-touch-callout: none;
+}
+
+</style>
+<script>
+function playSound (tauntID) {
+    document.getElementById(tauntID).load();
+    document.getElementById(tauntID).play();
+}
+</script>
+</head>
+<body>
+
+<audio id="a01" src="sounds/a01.mp3" autostart="false" ></audio>
+<audio id="a02" src="sounds/a02.mp3" autostart="false" ></audio>
+<audio id="a04" src="sounds/a04.mp3" autostart="false" ></audio>
+<audio id="a05" src="sounds/a05.mp3" autostart="false" ></audio>
+<audio id="a06" src="sounds/a06.mp3" autostart="false" ></audio>
+<audio id="a07" src="sounds/a07.mp3" autostart="false" ></audio>
+<audio id="a08" src="sounds/a08.mp3" autostart="false" ></audio>
+<audio id="a09" src="sounds/a09.mp3" autostart="false" ></audio>
+<audio id="a10" src="sounds/a10.mp3" autostart="false" ></audio>
+<audio id="a11" src="sounds/a11.mp3" autostart="false" ></audio>
+<audio id="a12" src="sounds/a12.mp3" autostart="false" ></audio>
+<audio id="a13" src="sounds/a13.mp3" autostart="false" ></audio>
+<audio id="a14" src="sounds/a14.mp3" autostart="false" ></audio>
+<audio id="a15" src="sounds/a15.mp3" autostart="false" ></audio>
+<audio id="a16" src="sounds/a16.mp3" autostart="false" ></audio>
+<audio id="a17" src="sounds/a17.mp3" autostart="false" ></audio>
+<audio id="a18" src="sounds/a18.mp3" autostart="false" ></audio>
+<audio id="a19" src="sounds/a19.mp3" autostart="false" ></audio>
+<audio id="a20" src="sounds/a20.mp3" autostart="false" ></audio>
+<audio id="a21" src="sounds/a21.mp3" autostart="false" ></audio>
+<audio id="a22" src="sounds/a22.mp3" autostart="false" ></audio>
+<audio id="a23" src="sounds/a23.mp3" autostart="false" ></audio>
+<audio id="a24" src="sounds/a24.mp3" autostart="false" ></audio>
+<audio id="a25" src="sounds/a25.mp3" autostart="false" ></audio>
+<audio id="a26" src="sounds/a26.mp3" autostart="false" ></audio>
+<audio id="a27" src="sounds/a27.mp3" autostart="false" ></audio>
+<audio id="a28" src="sounds/a28.mp3" autostart="false" ></audio>
+<audio id="a29" src="sounds/a29.mp3" autostart="false" ></audio>
+<audio id="a30" src="sounds/a30.mp3" autostart="false" ></audio>
+<audio id="a31" src="sounds/a31.mp3" autostart="false" ></audio>
+<audio id="a32" src="sounds/a32.mp3" autostart="false" ></audio>
+<audio id="a33" src="sounds/a33.mp3" autostart="false" ></audio>
+<audio id="a34" src="sounds/a34.mp3" autostart="false" ></audio>
+<audio id="a35" src="sounds/a35.mp3" autostart="false" ></audio>
+<audio id="a36" src="sounds/a36.mp3" autostart="false" ></audio>
+<audio id="a37" src="sounds/a37.mp3" autostart="false" ></audio>
+<audio id="a38" src="sounds/a38.mp3" autostart="false" ></audio>
+<audio id="a39" src="sounds/a39.mp3" autostart="false" ></audio>
+<audio id="a40" src="sounds/a40.mp3" autostart="false" ></audio>
+<audio id="a41" src="sounds/a41.mp3" autostart="false" ></audio>
+
+<audio id="g01" src="sounds/g01.mp3" autostart="false" ></audio>
+<audio id="g02" src="sounds/g02.mp3" autostart="false" ></audio>
+<audio id="g03" src="sounds/g03.mp3" autostart="false" ></audio>
+<audio id="g04" src="sounds/g04.mp3" autostart="false" ></audio>
+<audio id="g05" src="sounds/g05.mp3" autostart="false" ></audio>
+<audio id="g06" src="sounds/g06.mp3" autostart="false" ></audio>
+<audio id="g07" src="sounds/g07.mp3" autostart="false" ></audio>
+<audio id="g08" src="sounds/g08.mp3" autostart="false" ></audio>
+<audio id="g09" src="sounds/g09.mp3" autostart="false" ></audio>
+<audio id="g10" src="sounds/g10.mp3" autostart="false" ></audio>
+<audio id="g11" src="sounds/g11.mp3" autostart="false" ></audio>
+<audio id="g12" src="sounds/g12.mp3" autostart="false" ></audio>
+<audio id="g13" src="sounds/g13.mp3" autostart="false" ></audio>
+<audio id="g14" src="sounds/g14.mp3" autostart="false" ></audio>
+<audio id="g15" src="sounds/g15.mp3" autostart="false" ></audio>
+<audio id="g16" src="sounds/g16.mp3" autostart="false" ></audio>
+<audio id="g17" src="sounds/g17.mp3" autostart="false" ></audio>
+<audio id="g18" src="sounds/g18.mp3" autostart="false" ></audio>
+<audio id="g19" src="sounds/g19.mp3" autostart="false" ></audio>
+<audio id="g20" src="sounds/g20.mp3" autostart="false" ></audio>
+<audio id="g21" src="sounds/g21.mp3" autostart="false" ></audio>
+<audio id="g22" src="sounds/g22.mp3" autostart="false" ></audio>
+<audio id="g23" src="sounds/g23.mp3" autostart="false" ></audio>
+<audio id="g24" src="sounds/g24.mp3" autostart="false" ></audio>
+<audio id="g25" src="sounds/g25.mp3" autostart="false" ></audio>
+<audio id="g26" src="sounds/g26.mp3" autostart="false" ></audio>
+<audio id="g27" src="sounds/g27.mp3" autostart="false" ></audio>
+<audio id="g28" src="sounds/g28.mp3" autostart="false" ></audio>
+<audio id="g29" src="sounds/g29.mp3" autostart="false" ></audio>
+<audio id="g30" src="sounds/g30.mp3" autostart="false" ></audio>
+<audio id="g31" src="sounds/g31.mp3" autostart="false" ></audio>
+<audio id="g32" src="sounds/g32.mp3" autostart="false" ></audio>
+<audio id="g33" src="sounds/g33.mp3" autostart="false" ></audio>
+<audio id="g34" src="sounds/g34.mp3" autostart="false" ></audio>
+<audio id="g35" src="sounds/g35.mp3" autostart="false" ></audio>
+<audio id="g36" src="sounds/g36.mp3" autostart="false" ></audio>
+<audio id="g37" src="sounds/g37.mp3" autostart="false" ></audio>
+<audio id="g38" src="sounds/g38.mp3" autostart="false" ></audio>
+<audio id="g39" src="sounds/g39.mp3" autostart="false" ></audio>
+
+<audio id="b01" src="sounds/b01.mp3" autostart="false" ></audio>
+<audio id="b02" src="sounds/b02.mp3" autostart="false" ></audio>
+<audio id="b03" src="sounds/b03.mp3" autostart="false" ></audio>
+<audio id="b04" src="sounds/b04.mp3" autostart="false" ></audio>
+<audio id="b05" src="sounds/b05.mp3" autostart="false" ></audio>
+<audio id="b06" src="sounds/b06.mp3" autostart="false" ></audio>
+<audio id="b07" src="sounds/b07.mp3" autostart="false" ></audio>
+<audio id="b08" src="sounds/b08.mp3" autostart="false" ></audio>
+<audio id="b09" src="sounds/b09.mp3" autostart="false" ></audio>
+<audio id="b10" src="sounds/b10.mp3" autostart="false" ></audio>
+<audio id="b11" src="sounds/b11.mp3" autostart="false" ></audio>
+<audio id="b12" src="sounds/b12.mp3" autostart="false" ></audio>
+<audio id="b13" src="sounds/b13.mp3" autostart="false" ></audio>
+<audio id="b14" src="sounds/b14.mp3" autostart="false" ></audio>
+<audio id="b15" src="sounds/b15.mp3" autostart="false" ></audio>
+<audio id="b16" src="sounds/b16.mp3" autostart="false" ></audio>
+<audio id="b17" src="sounds/b17.mp3" autostart="false" ></audio>
+<audio id="b18" src="sounds/b18.mp3" autostart="false" ></audio>
+<audio id="b19" src="sounds/b19.mp3" autostart="false" ></audio>
+<audio id="b20" src="sounds/b20.mp3" autostart="false" ></audio>
+<audio id="b21" src="sounds/b21.mp3" autostart="false" ></audio>
+<audio id="b22" src="sounds/b22.mp3" autostart="false" ></audio>
+<audio id="b23" src="sounds/b23.mp3" autostart="false" ></audio>
+<audio id="b24" src="sounds/b24.mp3" autostart="false" ></audio>
+<audio id="b25" src="sounds/b25.mp3" autostart="false" ></audio>
+<audio id="b26" src="sounds/b26.mp3" autostart="false" ></audio>
+<audio id="b27" src="sounds/b27.mp3" autostart="false" ></audio>
+<audio id="b28" src="sounds/b28.mp3" autostart="false" ></audio>
+<audio id="b29" src="sounds/b29.mp3" autostart="false" ></audio>
+<audio id="b30" src="sounds/b30.mp3" autostart="false" ></audio>
+<audio id="b31" src="sounds/b31.mp3" autostart="false" ></audio>
+<audio id="b32" src="sounds/b32.mp3" autostart="false" ></audio>
+<audio id="b33" src="sounds/b33.mp3" autostart="false" ></audio>
+<audio id="b34" src="sounds/b34.mp3" autostart="false" ></audio>
+
+<audio id="r01" src="sounds/r01.mp3" autostart="false" ></audio>
+<audio id="r02" src="sounds/r02.mp3" autostart="false" ></audio>
+<audio id="r03" src="sounds/r03.mp3" autostart="false" ></audio>
+<audio id="r04" src="sounds/r04.mp3" autostart="false" ></audio>
+<audio id="r05" src="sounds/r05.mp3" autostart="false" ></audio>
+<audio id="r06" src="sounds/r06.mp3" autostart="false" ></audio>
+<audio id="r07" src="sounds/r07.mp3" autostart="false" ></audio>
+<audio id="r08" src="sounds/r08.mp3" autostart="false" ></audio>
+<audio id="r09" src="sounds/r09.mp3" autostart="false" ></audio>
+<audio id="r10" src="sounds/r10.mp3" autostart="false" ></audio>
+<audio id="r11" src="sounds/r11.mp3" autostart="false" ></audio>
+<audio id="r12" src="sounds/r12.mp3" autostart="false" ></audio>
+<audio id="r13" src="sounds/r13.mp3" autostart="false" ></audio>
+<audio id="r14" src="sounds/r14.mp3" autostart="false" ></audio>
+<audio id="r15" src="sounds/r15.mp3" autostart="false" ></audio>
+<audio id="r16" src="sounds/r16.mp3" autostart="false" ></audio>
+<audio id="r17" src="sounds/r17.mp3" autostart="false" ></audio>
+<audio id="r18" src="sounds/r18.mp3" autostart="false" ></audio>
+<audio id="r19" src="sounds/r19.mp3" autostart="false" ></audio>
+<audio id="r20" src="sounds/r20.mp3" autostart="false" ></audio>
+<audio id="r21" src="sounds/r21.mp3" autostart="false" ></audio>
+
+<audio id="narneson" src="sounds/narneson.mp3" autostart="false" ></audio>
+
+
+
+<div class="row"><img id="title" src="title.png" /></div>
+
+<div class="category">FAVOURITES</div>
+
+<div class="row">
+  <img class="btn" src="btn/a08.png" onclick="playSound('a08')" />
+  <img class="btn" src="btn/g25.png" onclick="playSound('g25')" />  
+</div>
+<div class="row">
+  <img class="btn" src="btn/g03.png" onclick="playSound('g03')" />
+  <img class="btn" src="btn/a16.png" onclick="playSound('a16')" />
+</div>
+<div class="row">
+  <img class="btn" src="btn/g39.png" onclick="playSound('g39')" />
+  <img class="btn" src="btn/r06.png" onclick="playSound('r06')" />
+  
+</div>
+
+<div class="category">AMERICAN</div>
+<div class="row" style="padding-top:30px">
+  <img class="btn" src="btn/a01.png" onclick="playSound('a01')" />
+  <img class="btn" src="btn/a02.png" onclick="playSound('a02')" />
+</div>
+<div class="row">
+  <img class="btn" src="btn/a39.png" onclick="playSound('a39')" />
+  <img class="btn" src="btn/a04.png" onclick="playSound('a04')" />
+</div>
+<div class="row">
+  <img class="btn" src="btn/a05.png" onclick="playSound('a05')" />
+  <img class="btn" src="btn/a06.png" onclick="playSound('a06')" />
+</div>
+<div class="row">
+  <img class="btn" src="btn/a07.png" onclick="playSound('a07')" />
+  <img class="btn" src="btn/a41.png" onclick="playSound('a41')" />
+</div>
+<div class="row">
+  <img class="btn" src="btn/a09.png" onclick="playSound('a09')" />
+  <img class="btn" src="btn/a10.png" onclick="playSound('a10')" />
+</div>
+<div class="row">
+  <img class="btn" src="btn/a11.png" onclick="playSound('a11')" />
+  <img class="btn" src="btn/a12.png" onclick="playSound('a12')" />
+</div>
+<div class="row">
+  <img class="btn" src="btn/a13.png" onclick="playSound('a13')" />
+  <img class="btn" src="btn/a14.png" onclick="playSound('a14')" />
+</div>
+<div class="row">
+  <img class="btn" src="btn/a15.png" onclick="playSound('a15')" />
+  <img class="btn" src="btn/a40.png" onclick="playSound('a40')" />
+</div>
+<div class="row">
+  <img class="btn" src="btn/a17.png" onclick="playSound('a17')" />
+  <img class="btn" src="btn/a18.png" onclick="playSound('a18')" />
+</div>
+<div class="row">
+  <img class="btn" src="btn/a19.png" onclick="playSound('a19')" />
+  <img class="btn" src="btn/a20.png" onclick="playSound('a20')" />
+</div>
+<div class="row">
+  <img class="btn" src="btn/a28.png" onclick="playSound('a28')" />
+  <img class="btn" src="btn/a22.png" onclick="playSound('a22')" />
+</div>
+<div class="row">
+  <img class="btn" src="btn/a23.png" onclick="playSound('a23')" />
+  <img class="btn" src="btn/a24.png" onclick="playSound('a24')" />
+</div>
+<div class="row">
+  <img class="btn" src="btn/a25.png" onclick="playSound('a25')" />
+  <img class="btn" src="btn/a21.png" onclick="playSound('a21')" />
+</div>
+<div class="row">
+  <img class="btn" src="btn/a26.png" onclick="playSound('a26')" />
+  <img class="btn" src="btn/a27.png" onclick="playSound('a27')" />
+</div>
+<div class="row">
+  <img class="btn" src="btn/a29.png" onclick="playSound('a29')" />
+  <img class="btn" src="btn/a30.png" onclick="playSound('a30')" />
+</div>
+<div class="row">
+  <img class="btn" src="btn/a31.png" onclick="playSound('a31')" />
+  <img class="btn" src="btn/a32.png" onclick="playSound('a32')" />
+</div>
+<div class="row">
+  <img class="btn" src="btn/a33.png" onclick="playSound('a33')" />
+  <img class="btn" src="btn/a34.png" onclick="playSound('a34')" />
+</div>
+<div class="row">
+  <img class="btn" src="btn/a35.png" onclick="playSound('a35')" />
+  <img class="btn" src="btn/a36.png" onclick="playSound('a36')" />
+</div>
+<div class="row">
+  <img class="btn" src="btn/a37.png" onclick="playSound('a37')" />
+  <img class="btn" src="btn/a38.png" onclick="playSound('a38')" />
+</div>
+
+
+<div class="category">GERMAN</div>
+<div class="row" style="padding-top:30px">
+  <img class="btn" src="btn/g01.png" onclick="playSound('g01')" />
+  <img class="btn" src="btn/g02.png" onclick="playSound('g02')" />
+</div>
+<div class="row">
+  <img class="btn" src="btn/g04.png" onclick="playSound('g04')" />
+  <img class="btn" src="btn/g38.png" onclick="playSound('g38')" />
+</div>
+<div class="row">
+  <img class="btn" src="btn/g05.png" onclick="playSound('g05')" />
+  <img class="btn" src="btn/g06.png" onclick="playSound('g06')" />
+</div>
+<div class="row">
+  <img class="btn" src="btn/g07.png" onclick="playSound('g07')" />
+  <img class="btn" src="btn/g08.png" onclick="playSound('g08')" />
+</div>
+<div class="row">
+  <img class="btn" src="btn/g28.png" onclick="playSound('g28')" />
+  <img class="btn" src="btn/g10.png" onclick="playSound('g10')" />
+</div>
+<div class="row">
+  <img class="btn" src="btn/g11.png" onclick="playSound('g11')" />
+  <img class="btn" src="btn/g12.png" onclick="playSound('g12')" />
+</div>
+<div class="row">
+  <img class="btn" src="btn/g13.png" onclick="playSound('g13')" />
+  <img class="btn" src="btn/g14.png" onclick="playSound('g14')" />
+</div>
+<div class="row">
+  <img class="btn" src="btn/g15.png" onclick="playSound('g15')" />
+  <img class="btn" src="btn/g16.png" onclick="playSound('g16')" />
+</div>
+<div class="row">
+  <img class="btn" src="btn/g17.png" onclick="playSound('g17')" />
+  <img class="btn" src="btn/g18.png" onclick="playSound('g18')" />
+</div>
+<div class="row">
+  <img class="btn" src="btn/g19.png" onclick="playSound('g19')" />
+  <img class="btn" src="btn/g20.png" onclick="playSound('g20')" />
+</div>
+<div class="row">
+  <img class="btn" src="btn/g21.png" onclick="playSound('g21')" />
+  <img class="btn" src="btn/g22.png" onclick="playSound('g22')" />
+</div>
+<div class="row">
+  <img class="btn" src="btn/g23.png" onclick="playSound('g23')" />
+  <img class="btn" src="btn/g24.png" onclick="playSound('g24')" />
+</div>
+<div class="row">
+  <img class="btn" src="btn/g26.png" onclick="playSound('g26')" />
+  <img class="btn" src="btn/g37.png" onclick="playSound('g37')" />
+</div>
+<div class="row">
+  <img class="btn" src="btn/g27.png" onclick="playSound('g27')" />
+  <img class="btn" src="btn/g09.png" onclick="playSound('g09')" />
+</div>
+<div class="row">
+  <img class="btn" src="btn/g29.png" onclick="playSound('g29')" />
+  <img class="btn" src="btn/g30.png" onclick="playSound('g30')" />
+</div>
+<div class="row">
+  <img class="btn" src="btn/g31.png" onclick="playSound('g31')" />
+  <img class="btn" src="btn/g32.png" onclick="playSound('g32')" />
+</div>
+<div class="row">
+  <img class="btn" src="btn/g33.png" onclick="playSound('g33')" />
+  <img class="btn" src="btn/g34.png" onclick="playSound('g34')" />
+</div>
+<div class="row">
+  <img class="btn" src="btn/g35.png" onclick="playSound('g35')" />
+  <img class="btn" src="btn/g36.png" onclick="playSound('g36')" />
+</div>
+
+<div class="category">BRITISH</div>
+<div class="row" style="padding-top:30px">
+  <img class="btn" src="btn/b01.png" onclick="playSound('b01')" />
+  <img class="btn" src="btn/b02.png" onclick="playSound('b02')" />
+</div>
+<div class="row">
+  <img class="btn" src="btn/b03.png" onclick="playSound('b03')" />
+  <img class="btn" src="btn/b04.png" onclick="playSound('b04')" />
+</div>
+<div class="row">
+  <img class="btn" src="btn/b05.png" onclick="playSound('b05')" />
+  <img class="btn" src="btn/b06.png" onclick="playSound('b06')" />
+</div>
+<div class="row">
+  <img class="btn" src="btn/b07.png" onclick="playSound('b07')" />
+  <img class="btn" src="btn/b08.png" onclick="playSound('b08')" />
+</div>
+<div class="row">
+  <img class="btn" src="btn/b09.png" onclick="playSound('b09')" />
+  <img class="btn" src="btn/b10.png" onclick="playSound('b10')" />
+</div>
+<div class="row">
+  <img class="btn" src="btn/b11.png" onclick="playSound('b11')" />
+  <img class="btn" src="btn/b12.png" onclick="playSound('b12')" />
+</div>
+<div class="row">
+  <img class="btn" src="btn/b13.png" onclick="playSound('b13')" />
+  <img class="btn" src="btn/b14.png" onclick="playSound('b14')" />
+</div>
+<div class="row">
+  <img class="btn" src="btn/b15.png" onclick="playSound('b15')" />
+  <img class="btn" src="btn/b16.png" onclick="playSound('b16')" />
+</div>
+<div class="row">
+  <img class="btn" src="btn/b17.png" onclick="playSound('b17')" />
+  <img class="btn" src="btn/b18.png" onclick="playSound('b18')" />
+</div>
+<div class="row">
+  <img class="btn" src="btn/b19.png" onclick="playSound('b19')" />
+  <img class="btn" src="btn/b20.png" onclick="playSound('b20')" />
+</div>
+<div class="row">
+  <img class="btn" src="btn/b21.png" onclick="playSound('b21')" />
+  <img class="btn" src="btn/b22.png" onclick="playSound('b22')" />
+</div>
+<div class="row">
+  <img class="btn" src="btn/b23.png" onclick="playSound('b23')" />
+  <img class="btn" src="btn/b24.png" onclick="playSound('b24')" />
+</div>
+<div class="row">
+  <img class="btn" src="btn/b25.png" onclick="playSound('b25')" />
+  <img class="btn" src="btn/b31.png" onclick="playSound('b31')" />
+</div>
+<div class="row">
+  <img class="btn" src="btn/b27.png" onclick="playSound('b27')" />
+  <img class="btn" src="btn/b28.png" onclick="playSound('b28')" />
+</div>
+<div class="row">
+  <img class="btn" src="btn/b29.png" onclick="playSound('b29')" />
+  <img class="btn" src="btn/b30.png" onclick="playSound('b30')" />
+</div>
+<div class="row">
+  <img class="btn" src="btn/b26.png" onclick="playSound('b26')" />
+  <img class="btn" src="btn/b32.png" onclick="playSound('b32')" />
+</div>
+<div class="row">
+  <img class="btn" src="btn/b33.png" onclick="playSound('b33')" />
+  <img class="btn" src="btn/b34.png" onclick="playSound('b34')" />
+</div>
+
+<div class="category">RUSSIAN</div>
+<div class="row" style="padding-top:30px">
+  <img class="btn" src="btn/r01.png" onclick="playSound('r01')" />
+  <img class="btn" src="btn/r02.png" onclick="playSound('r02')" />
+</div>
+<div class="row">
+  <img class="btn" src="btn/r03.png" onclick="playSound('r03')" />
+  <img class="btn" src="btn/r04.png" onclick="playSound('r04')" />
+</div>
+<div class="row">
+  <img class="btn" src="btn/r05.png" onclick="playSound('r05')" />
+  <img class="btn" src="btn/r21.png" onclick="playSound('r21')" />
+</div>
+<div class="row">
+  <img class="btn" src="btn/r07.png" onclick="playSound('r07')" />
+  <img class="btn" src="btn/r08.png" onclick="playSound('r08')" />
+</div>
+<div class="row">
+  <img class="btn" src="btn/r09.png" onclick="playSound('r09')" />
+  <img class="btn" src="btn/r10.png" onclick="playSound('r10')" />
+</div>
+<div class="row">
+  <img class="btn" src="btn/r11.png" onclick="playSound('r11')" />
+  <img class="btn" src="btn/r12.png" onclick="playSound('r12')" />
+</div>
+<div class="row">
+  <img class="btn" src="btn/r13.png" onclick="playSound('r13')" />
+  <img class="btn" src="btn/r14.png" onclick="playSound('r14')" />
+</div>
+<div class="row">
+  <img class="btn" src="btn/r15.png" onclick="playSound('r15')" />
+  <img class="btn" src="btn/r16.png" onclick="playSound('r16')" />
+</div>
+<div class="row">
+  <img class="btn" src="btn/r17.png" onclick="playSound('r17')" />
+  <img class="btn" src="btn/r18.png" onclick="playSound('r18')" />
+</div>
+<div class="row">
+  <img class="btn" src="btn/r19.png" onclick="playSound('r19')" />
+  <img class="btn" src="btn/r20.png" onclick="playSound('r20')" />
+</div>
+
+<div class="row" style="padding-top:30px;"><img id="hub" src="hub.png" onclick="playSound('narneson');" /></div>
+
+</body>
+</html>
